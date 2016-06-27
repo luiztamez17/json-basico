@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>HOLI</title>
+</head>
+<body>
+	<section id="tests">
+		<h1>TUTO JSON</h1>
+		<div id="content">
+			
+		</div>
+	</section>
+	<script type="text/javascript">
+		// var objetoJSON;
+		// objetoJSON = {"nombre":"Jorge","edad":"23",
+		// "render" :function(){
+		// 	alert (objetoJSON.nombre + " " + objetoJSON.edad);
+		// }
+		// };
+		// objetoJSON.render();
+		var objetos = {"Personas":[
+			{"nombre":"Jorge","edad":"23",},
+			{"nombre":"Juan","edad":"30",},
+			{"nombre":"Pedro","edad":"13",},
+		]};
+		document.getElementById('content').innerHTML = objetos.Personas[0].edad;
+	</script>	
+</body>
+</html>
